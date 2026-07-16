@@ -1,0 +1,20 @@
+{
+  "name": "Cockpit Zone Intelligence",
+  "short_name": "Cockpit Zone",
+  "description": "Cockpit Zone Intelligence — Dashboard ยอดขายทุกเขต/AM Real-time",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffeb00",
+  "theme_color": "#ffeb00",
+  "scope": "/",
+  "lang": "th",
+  "icons": [
+    {
+      "src": "/icons/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
