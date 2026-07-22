@@ -34,13 +34,7 @@ const F_BODY = "'Barlow', system-ui, -apple-system, sans-serif"
 
 const pct  = (a, b) => (b > 0 ? (a / b) * 100 : 0)
 const num  = n => (n == null ? '—' : Math.round(n).toLocaleString('en-US'))
-const kFmt = n => {
-  if (n == null) return '—'
-  const abs = Math.abs(n)
-  if (abs >= 1_000_000) return (n / 1_000_000).toFixed(n % 1_000_000 ? 2 : 1).replace(/\.0$/, '') + 'M'
-  if (abs >= 1000) return Math.round(n / 1000) + 'K'
-  return Math.round(n).toLocaleString('en-US')
-}
+const kFmt = n => (n == null ? '—' : Math.round(n).toLocaleString('en-US'))  // แสดงเต็มจำนวน ไม่ย่อ K/M
 
 // ── คำนวณ ยอดจริง + เป้าวันแบบ dynamic ของ "วันที่ day" — สูตรเดียวกับ Tracker tab ──
 function dailyStatsFor(day, ids, de, FIELDS, sumDaysUpTo, calcTS, t, TOTAL_D) {
